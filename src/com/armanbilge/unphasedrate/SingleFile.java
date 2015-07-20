@@ -28,7 +28,7 @@ public class SingleFile {
                     final String taxon = l.next();
                     final int n = Utils.nextInt(l) + Utils.nextInt(l) + Utils.nextInt(l) + Utils.nextInt(l);
                     for (int i = 0; i < N; ++i) {
-                        for (int j = i; j < N; ++j) {
+                        for (int j = i+1; j < N; ++j) {
                             counter.add(new Point2D(Math.abs(datesArray[i] - datesArray[j]), 0), n);
                         }
                     }
